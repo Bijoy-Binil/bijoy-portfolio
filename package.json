@@ -9,15 +9,15 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy":"npm run build" ,
-       "deploy":"gh-pages -d list"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d list"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@tailwindcss/vite": "^4.1.12",
-  
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
+    "react-icons": "^5.5.0",
     "tailwindcss": "^4.1.12"
   },
   "devDependencies": {

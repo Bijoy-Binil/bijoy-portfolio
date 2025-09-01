@@ -12,12 +12,13 @@ import emailjs from '@emailjs/browser'
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    emailjs
-      .sendForm(import.meta.env.SERVICE_ID,
-        import.meta.env.TEMPLATE_ID,
+ emailjs
+      .sendForm(
+        import.meta.env.VITE_SERVICE_ID,
+        import.meta.env.VITE_TEMPLATE_ID,
         e.target,
-        import.meta.env.PUBLIC_KEY)
+        import.meta.env.VITE_PUBLIC_KEY
+      )
       .then((result) => {
         alert("Message Sent!");
         console.log("Result==>",result)

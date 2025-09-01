@@ -49,6 +49,7 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
               {" "}
               Contact{" "}
             </a>
+            
           </div>
         </div>
       </div>
