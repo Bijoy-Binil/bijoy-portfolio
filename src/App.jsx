@@ -3,6 +3,10 @@ import LoadingScreen from "./components/LoadingScreen"
 import './index.css'
 import Navbar from "./components/Navbar"
 import MobileMenu from "./components/MobileMenu"
+import Home from "./components/Sections/Home"
+import About from "./components/Sections/About"
+import Projects from "./components/Sections/Projects"
+import Contact from "./components/Sections/Contact"
 
 
 function App() {
@@ -18,6 +22,10 @@ const [menuOpen, setMenuOpen]=useState(false)
       >
         <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+        <Home/>
+        <About/>
+        <Projects/>
+        <Contact/>
         
       </div>
     </>
